@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GPSSessionists</title>
+    <title>Dev Match</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -24,7 +24,17 @@
                 <!--<a href="#" class="navbar-brand">GPS Sessionists</a>-->
                 <!--<img src="images/logo.png" width="120px" height="120px"></a>-->
             
-            <%= link_to 'SaaS', root_path, class: 'navbar-brand'%>
+            <!-- ADDED FONT AWSOME-->
+            <!--<i class="fa fa-pencil-square-o strong navbar-brand"></i>-->
+            <!-- ADDED FONT AWSOME-->
+            <!--  <%= link_to 'Dev Match', root_path, class: 'navbar-brand'%>  -->
+            
+            <!--TO INCLUDE THE IMAGE IN THE HOME LINK-->
+            <%= link_to root_path, class: 'navbar-brand' do %>
+            <i class="fa fa-pencil-square-o strong"></i>
+            Dev Match 
+            <% end %>
+            
             
             </div>
 
