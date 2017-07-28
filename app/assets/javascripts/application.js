@@ -16,6 +16,7 @@
 //  ADDED BOOTSTRAP JAVASCRIPT TO ACTIVATE BOOTSTRAP
 //= require jquery
 //= require bootstrap-sprockets
+//= require bootstrap
 
 
 //= require turbolinks

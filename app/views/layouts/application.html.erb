@@ -53,9 +53,25 @@
     </nav>
 <!--NAVBAR FROM GETBOOTSTRAP.COM-->    
     
-    
+
   <div class="container">
+
+    <h1>&nbsp</h1>
+   
+    <% if flash[:success] %>
+      <div class="alert alert-success">
+       <strong>Success!</strong> Message sent...
+      </div>
+    <% end %>
+
+    <% if flash[:danger] %>
+      <div class="alert alert-danger">
+       <strong>Failed!</strong>  Error occured, message has not been sent...
+      </div>
+    <% end %>    
+
     <%= yield %>
+
    </div> 
   
   </body>
