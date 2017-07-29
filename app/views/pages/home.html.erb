@@ -1,9 +1,31 @@
 <div class="container">
 <div class="row">
-<div class="jumbotron text-center">
-    <h1>LIVE Music!</h1>
-
-    <p>Welcome to our portfolio site...</p>
-</div>
+    <div class="jumbotron text-center">
+        <h1>LIVE Music!</h1>
+    
+        <p>Welcome to our portfolio site...</p>
+    </div>
+        <div class="row">
+            
+            <div class="col-md-6">
+                <div class="well text-center">
+                    <h2 class="">Free</h2>
+                    <h4>Sign up for free account and get a basic access to the community.</h4>
+                    
+                    <%= link_to 'Sign Up Free', new_user_registration_path, class: 'btn btn-default btn-lg btn-block' %>
+                
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="well text-center">
+                    <h2 class="">Premium</h2>
+                    <h4>Sign up for premium account for 10$, and get a special acces to the community</h4>
+                
+                    <%= link_to 'Sign Up Premium', new_user_registration_path, class: 'btn btn-default btn-lg btn-block' %>
+                    
+                </div>
+            </div>
+        </div>
 </div>
 </div>
