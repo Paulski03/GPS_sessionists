@@ -1,5 +1,7 @@
 {
   "name": "GPS_sessionists",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "sendgrid": "^5.2.0"
+  }
 }
