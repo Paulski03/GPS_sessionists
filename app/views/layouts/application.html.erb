@@ -41,8 +41,16 @@
             <!-- <div class="clear"></div> -->
             <!--NOTE ON link_to and pagename_path are all ruby codes-->
             <div class="collapse navbar-collapse">
+                <div class="nav navbar-nav navbar-right">
+                  <% if current_user %>
+                    <%= link_to "Sign Out", destroy_user_session_path, class: 'btn btn-default navbar-btn', method: :delete %>
+                  <% else %>
+                    <%= link_to "Log In", new_user_session_path, class: 'btn btn-default navbar-btn', method: :get %>
+                    <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-default navbar-btn', method: :get %>
+                  <% end %>
+                </div>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><%= link_to "Home", root_path %></li>
+                    <li><%= link_to "Home", root_path %></li>
                     <li><a href="#about">Videos</a></li>
                     <li><a href="#contact">Photos</a></li>
                     <li><%= link_to "About", about_path %></li>
